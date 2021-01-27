@@ -1,19 +1,23 @@
 ---
-language: 
+annotations_creators:
+- crowdsourced
+language_creators:
+- crowdsourced
+languages:
 - en
-task:
+licenses:
+- cc-by-4.0
+multilinguality:
+- monolingual
+size_categories:
+- 100K<n<1M
+source_datasets:
+- extended|other-flicker-30k
+- extended|other-visual-genome
+task_categories:
 - text-classification
-purpose:
-- NLI
-size:
-- ">100k"
-language producers:
-- crowdsourced
-annotation:
-- crowdsourced
-tags:
-- extended-from-other-datasets
-license: "CC BY-SA 4.0"
+task_ids:
+- natural-language-inference
 ---
 # Dataset Card for SNLI
 
@@ -117,7 +121,7 @@ The IDs in the original dataset correspond to identifiers from Flickr30k or (the
 
 ### Free text description for context (e.g. describe difference between title / selftext / body in Reddit data) and example
 
-For each ID, there is a string for the premise, a string for the hypothesis, and an integer for the label. Note that each premise may appear three times with a different hypothesis and label. See the [SNLI corpus viewer](https://huggingface.co/nlp/viewer/?dataset=snli) to explore more examples.
+For each ID, there is a string for the premise, a string for the hypothesis, and an integer for the label. Note that each premise may appear three times with a different hypothesis and label. See the [SNLI corpus viewer](https://huggingface.co/datasets/viewer/?dataset=snli) to explore more examples.
 
 ID | Premise | Hypothesis | Label
 ---|---------|------------|-------
